@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "byebytes"
+version = "1.0.0"
+description = "Find and clean node_modules, build folders and developer caches from one terminal UI."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "YOUR NAME" }]
+keywords = ["node_modules", "cleanup", "disk space", "cache", "developer tools", "tui", "cli"]
+classifiers = [
+    "Environment :: Console :: Curses",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Filesystems",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/Lucifix/byebytes"
+
+[project.scripts]
+byebytes = "byebytes:main"
+
+[tool.setuptools]
+py-modules = ["byebytes"]
